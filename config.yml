@@ -1,0 +1,12 @@
+settings:
+  port: 8080
+feeds:
+- url: http://user:password@example.tld/rss.xml
+  path: filtered.xml
+  keep:
+  - author: my-favorite-author
+  - author: another-cool-guy
+  skip:
+  - category: some boring category
+    author: hate-this-guy
+  - title: some boring post
